@@ -53,9 +53,6 @@ $(document).ready(function () {
       }
     } else {
       timeLeft = secondsToHms(secs);
-
-      let denom = originalTime * 60;
-      let perc = Math.abs((secs / denom) * 100 - 100);
     }
     $("#time-left").text(timeLeft);
   }
