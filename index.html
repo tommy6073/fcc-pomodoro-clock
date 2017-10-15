@@ -6,23 +6,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="title">Pomodoro Clock</div>
-<div id="setting">
-  <div id="break-setting">
-    <button id="break-minus">-</button>
-    <span id="break-length">5</span>
-    <button id="break-plus">+</button>
+<main>
+  <div id="title">Pomodoro Clock</div>
+  <div id="setting">
+    <div id="break-setting">
+      <div id="break-length-title">BREAK LENGTH</div>
+      <div id="break-control">
+        <button id="break-minus">-</button>
+        <span id="break-length">5</span>
+        <button id="break-plus">+</button>
+      </div>
+    </div>
+    <div id="session-setting">
+      <div id="session-length-title">SESSION LENGTH</div>
+      <div id="session-control">
+        <button id="session-minus">-</button>
+        <span id="session-length">25</span>
+        <button id="session-plus">+</button>
+      </div>
+    </div>
   </div>
-  <div id="session-setting">
-    <button id="session-minus">-</button>
-    <span id="session-length">25</span>
-    <button id="session-plus">+</button>
+  <div id="timer">
+    <div id="current-session">Session</div>
+    <div id="time-left">25</div>
   </div>
-</div>
-<div id="timer">
-  <div id="current-session">Session</div>
-  <div id="time-left">25</div>
-</div>
+</main>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="script.js"></script>
 </body>
